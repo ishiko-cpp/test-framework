@@ -39,6 +39,7 @@ endif
 #
 #      ISHIKO_CPP_BASEPLATFORM_ROOT   Path to the Ishiko/C++ BasePlatform installation
 #      ISHIKO_CPP_ERRORS_ROOT         Path to the Ishiko/C++ Errors installation
+#      ISHIKO_CPP_FMT_ROOT            Path to the fmt installation
 #      ISHIKO_CPP_MEMORY_ROOT         Path to the Ishiko/C++ Memory installation
 #      ISHIKO_CPP_BOOST_ROOT          Path to the Boost installation
 #      ISHIKO_CPP_TEXT_ROOT           Path to the Ishiko/C++ Text installation
@@ -48,7 +49,6 @@ endif
 #      ISHIKO_CPP_TYPES_ROOT          Path to the Ishiko/C++ Types installation
 #      ISHIKO_CPP_DIFF_ROOT           Path to the Ishiko/C++ Diff installation
 #      ISHIKO_CPP_PROCESS_ROOT        Path to the Ishiko/C++ Process installation
-#      ISHIKO_CPP_FMT_ROOT            Path to the fmt installation
 #      ISHIKO_CPP_TIME_ROOT           Path to the Ishiko/C++ Time installation
 #      ISHIKO_CPP_PUGIXML_ROOT        Path to the pugixml installation
 #      ISHIKO_CPP_XML_ROOT            Path to the Ishiko/C++ XML installation
@@ -74,6 +74,8 @@ _equal  = $(and $(findstring $(1),$(2)),$(findstring $(2),$(1)))
 ISHIKO_CPP_BASEPLATFORM_ROOT ?= $(ISHIKO_CPP_ROOT)/base-platform
 # Path to the Ishiko/C++ Errors installation
 ISHIKO_CPP_ERRORS_ROOT ?= $(ISHIKO_CPP_ROOT)/errors
+# Path to the fmt installation
+ISHIKO_CPP_FMT_ROOT ?= $(FMT_ROOT)
 # Path to the Ishiko/C++ Memory installation
 ISHIKO_CPP_MEMORY_ROOT ?= $(ISHIKO_CPP_ROOT)/memory
 # Path to the Boost installation
@@ -92,8 +94,6 @@ ISHIKO_CPP_TYPES_ROOT ?= $(ISHIKO_CPP_ROOT)/types
 ISHIKO_CPP_DIFF_ROOT ?= $(ISHIKO_CPP_ROOT)/diff
 # Path to the Ishiko/C++ Process installation
 ISHIKO_CPP_PROCESS_ROOT ?= $(ISHIKO_CPP_ROOT)/process
-# Path to the fmt installation
-ISHIKO_CPP_FMT_ROOT ?= $(FMT_ROOT)
 # Path to the Ishiko/C++ Time installation
 ISHIKO_CPP_TIME_ROOT ?= $(ISHIKO_CPP_ROOT)/time
 # Path to the pugixml installation
