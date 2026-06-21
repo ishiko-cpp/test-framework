@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://nuime.org/schema/core/1">
+  <name>IshikoTestFramework</name>
+  <subprojects>
+    <subproject>
+      <name>IshikoTestFrameworkCore</name>
+      <location>
+        <url>https://github.com/ishiko-cpp/test-framework/core/build-files/nuime/IshikoTestFrameworkCore.nuime</url>
+      </location>
+    </subproject>
+  </subprojects>
+</project>
