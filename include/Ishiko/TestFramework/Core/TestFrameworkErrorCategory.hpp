@@ -23,7 +23,7 @@ public:
     const char* message(int ev, char* buffer, size_t len) const noexcept override;
 
 private:
-    TestFrameworkErrorCategory() noexcept = default;
+    TestFrameworkErrorCategory() noexcept;
 };
 
 void Throw(TestFrameworkErrorCategory::Value value, const char* file, int line);
