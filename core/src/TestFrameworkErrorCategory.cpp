@@ -8,6 +8,11 @@
 
 using namespace Ishiko;
 
+TestFrameworkErrorCategory::TestFrameworkErrorCategory() noexcept
+    : ErrorCategory(ID(0x7df0f408105f46a0ULL, 0xa804b695cde3bf68ULL)) // 7df0f408-105f-46a0-a804-b695cde3bf68
+{
+}
+
 const TestFrameworkErrorCategory& TestFrameworkErrorCategory::Get() noexcept
 {
     static TestFrameworkErrorCategory theCategory;
